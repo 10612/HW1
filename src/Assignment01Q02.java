@@ -3,9 +3,9 @@ public class Assignment01Q02 {
         double actualPi = Math.PI;
         double approxPi = 0;
 
-        int denominator = 1;
+        int terms = Integer.parseInt(args[0]), denominator = 1;
         byte sign = 1;
-        for (int i = 1; i <= Integer.parseInt(args[0]); i++) {
+        for (int i = 1; i <= terms; i++) {
             approxPi += 4.0 / denominator;
             denominator = (denominator + sign * 2) * -1;
             sign *= -1;
