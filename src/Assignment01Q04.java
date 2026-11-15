@@ -7,6 +7,7 @@ public class Assignment01Q04 {
             return array;
         }
 
+        // calculate the mathematical array.length mod move
         move = ((move % array.length) + array.length) % array.length;
 
         if (direction == 'R') {
@@ -33,7 +34,7 @@ public class Assignment01Q04 {
         if (move * 2 >= length) {
             moveR(array, move, 2 * move % length);
         } else {
-            moveR(array, move, 1);
+            moveR(array, move, move - length % move);
         }
     }
 
