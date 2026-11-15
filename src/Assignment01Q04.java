@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Assignment01Q04 {
 
     public static int[] shiftArrayCyclic(int[] array, int move, char direction) {
-        if (array.length < 2) {
+        if (move == 0 || array.length <= 1) {
             return array;
         }
 
